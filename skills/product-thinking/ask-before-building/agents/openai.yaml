@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ask Before Building"
+  short_description: "Turn open decisions into an executable build brief"
+  default_prompt: "Use $ask-before-building to interview me one decision at a time, then produce a copy-ready implementation prompt."
