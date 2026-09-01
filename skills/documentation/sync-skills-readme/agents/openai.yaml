@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sync Skills README"
+  short_description: "Keep a skills catalog accurate and current"
+  default_prompt: "Use $sync-skills-readme to regenerate and verify this repository skill catalog."
