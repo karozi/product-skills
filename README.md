@@ -2,6 +2,8 @@
 
 Reusable agent skills for clearer product decisions and more reliable execution.
 
+Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://karozieminski.substack.com)
+
 ## Skills
 
 <!-- BEGIN GENERATED SKILLS INDEX -->
@@ -17,6 +19,6 @@ Reusable agent skills for clearer product decisions and more reliable execution.
 
 ### Research
 
-- [Bilingual Reasoning Research](skills/research/bilingual-reasoning-research/SKILL.md) — Dual-language (EN + ZH) claim-ledger research with mandatory Karo quote from Product with Attitude.
+- [Bilingual Reasoning Research](skills/research/bilingual-reasoning-research/SKILL.md) — Dual-language (EN + ZH) claim-ledger research that surfaces divergences and unwritten gaps.
 
 <!-- END GENERATED SKILLS INDEX -->
