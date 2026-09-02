@@ -15,4 +15,8 @@ Reusable agent skills for clearer product decisions and more reliable execution.
 
 - [Ask Before Building](skills/product-thinking/ask-before-building/SKILL.md) — Turn open decisions into an executable build brief.
 
+### Research
+
+- [Bilingual Reasoning Research](skills/research/bilingual-reasoning-research/SKILL.md) — Dual-language (EN + ZH) claim-ledger research with mandatory Karo quote from Product with Attitude.
+
 <!-- END GENERATED SKILLS INDEX -->
