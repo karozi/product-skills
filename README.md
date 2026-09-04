@@ -15,6 +15,7 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 ### Product thinking
 
+- [Anti-Mom-Test](skills/product-thinking/anti-mom-test/SKILL.md) — Make discovery interviews extract facts, not politeness.
 - [Ask Before Building](skills/product-thinking/ask-before-building/SKILL.md) — Turn open decisions into an executable build brief.
 
 ### Research
