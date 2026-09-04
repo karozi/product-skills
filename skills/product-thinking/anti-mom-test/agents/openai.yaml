@@ -1,0 +1,4 @@
+interface:
+  display_name: "Anti-Mom-Test"
+  short_description: "Make discovery interviews extract facts, not politeness"
+  default_prompt: "Use $anti-mom-test to audit my interview questions against the Mom Test and rewrite every violation."
