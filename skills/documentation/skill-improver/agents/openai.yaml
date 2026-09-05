@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Improver"
+  short_description: "Validate every skill on push and optimize descriptions from trigger evals"
+  default_prompt: "Use $skill-improver to validate all skills in this repository and improve the weak ones."

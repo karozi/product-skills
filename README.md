@@ -11,6 +11,7 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 ### Documentation
 
+- [Skill Improver](skills/documentation/skill-improver/SKILL.md) — Validate every skill on push and optimize descriptions from trigger evals.
 - [Sync Skills README](skills/documentation/sync-skills-readme/SKILL.md) — Keep a skills catalog accurate and current.
 
 ### Lean startup
