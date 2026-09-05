@@ -13,6 +13,12 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 - [Sync Skills README](skills/documentation/sync-skills-readme/SKILL.md) — Keep a skills catalog accurate and current.
 
+### Lean startup
+
+- [MVP Type Selector](skills/lean-startup/mvp-type-selector/SKILL.md) — Pick the cheapest MVP that actually tests your riskiest assumption.
+- [Pivot or Persevere](skills/lean-startup/pivot-or-persevere/SKILL.md) — Force an evidence-backed verdict with a threshold, not another flake.
+- [Vanity Metric Audit](skills/lean-startup/vanity-metric-audit/SKILL.md) — Separate decision-grade metrics from numbers that only flatter.
+
 ### Product thinking
 
 - [Anti-Mom-Test](skills/product-thinking/anti-mom-test/SKILL.md) — Make discovery interviews extract facts, not politeness.

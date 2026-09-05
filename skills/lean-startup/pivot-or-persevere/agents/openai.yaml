@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pivot or Persevere"
+  short_description: "Force an evidence-backed verdict with a threshold, not another flake"
+  default_prompt: "Use $pivot-or-persevere to prepare and run my pivot-or-persevere decision with a written verdict."

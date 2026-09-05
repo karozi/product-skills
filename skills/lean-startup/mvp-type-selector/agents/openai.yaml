@@ -1,0 +1,4 @@
+interface:
+  display_name: "MVP Type Selector"
+  short_description: "Pick the cheapest MVP that actually tests your riskiest assumption"
+  default_prompt: "Use $mvp-type-selector to pick the right MVP type for my hypothesis and write the test plan."

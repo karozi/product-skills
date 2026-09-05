@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vanity Metric Audit"
+  short_description: "Separate decision-grade metrics from numbers that only flatter"
+  default_prompt: "Use $vanity-metric-audit to audit my dashboard for vanity metrics and rebuild it around cohorts."
