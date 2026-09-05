@@ -1,0 +1,59 @@
+name: Auto-publish skill gists
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "skills/**/SKILL.md"
+      - "skills/documentation/auto-gist-publisher/scripts/**"
+      - "skills/documentation/auto-gist-publisher/tests/**"
+      - ".github/workflows/auto-gist-publisher.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: auto-gist-publisher-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.x"
+
+      - name: Test publisher
+        run: python3 -m unittest discover -s skills/documentation/auto-gist-publisher/tests -p "test_*.py"
+
+      - name: Publish new skill gists
+        env:
+          GH_TOKEN: ${{ secrets.GIST_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Repo secret GIST_PAT is missing. Create a classic PAT with 'gist' scope and add it as GIST_PAT."
+            exit 1
+          fi
+          python3 skills/documentation/auto-gist-publisher/scripts/publish_new_skill_gists.py --repo-root . --write
+
+      - name: Commit updated published.json when changed
+        shell: bash
+        run: |
+          STATE_PATH="skills/documentation/auto-gist-publisher/state/published.json"
+          if git diff --quiet -- "$STATE_PATH"; then
+            echo "No new gists published; state unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$STATE_PATH"
+          git commit -m "chore: record newly published skill gists"
+          git push
