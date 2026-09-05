@@ -11,6 +11,7 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 ### Documentation
 
+- [Auto Gist Publisher](skills/documentation/auto-gist-publisher/SKILL.md) — Publish a public GitHub gist automatically every time a new skill is added to karozi/awesome-product-management-skills.
 - [Skill Improver](skills/documentation/skill-improver/SKILL.md) — Validate every skill on push and optimize descriptions from trigger evals.
 - [Sync Skills README](skills/documentation/sync-skills-readme/SKILL.md) — Keep a skills catalog accurate and current.
 
