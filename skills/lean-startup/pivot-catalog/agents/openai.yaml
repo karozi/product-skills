@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pivot Catalog"
+  short_description: "Name the pivot with Ries's ten-type catalog and draft the new hypothesis"
+  default_prompt: "Use $pivot-catalog to diagnose which pivot type fits and draft the pivot brief with its first cheap test."

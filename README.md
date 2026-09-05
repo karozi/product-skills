@@ -17,8 +17,16 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 ### Lean startup
 
+- [Build Measure Learn](skills/lean-startup/build-measure-learn/SKILL.md) — Plan loops that start with the hypothesis, not the build.
+- [Engine of Growth](skills/lean-startup/engine-of-growth/SKILL.md) — Diagnose sticky, viral, or paid and audit the one governing metric.
+- [Five Whys](skills/lean-startup/five-whys/SKILL.md) — Find the system failure behind any incident with proportional fixes at every level.
+- [Innovation Accounting](skills/lean-startup/innovation-accounting/SKILL.md) — Make early-stage progress measurable with baselines, tuning, and pivot-or-persevere decisions.
 - [MVP Type Selector](skills/lean-startup/mvp-type-selector/SKILL.md) — Pick the cheapest MVP that actually tests your riskiest assumption.
+- [Pirate Metrics AARRR](skills/lean-startup/pirate-metrics-aarr/SKILL.md) — Map the funnel, hunt the leakiest bucket, run one experiment.
+- [Pivot Catalog](skills/lean-startup/pivot-catalog/SKILL.md) — Name the pivot with Ries's ten-type catalog and draft the new hypothesis.
 - [Pivot or Persevere](skills/lean-startup/pivot-or-persevere/SKILL.md) — Force an evidence-backed verdict with a threshold, not another flake.
+- [Small Batches](skills/lean-startup/small-batches/SKILL.md) — Cut batch pathology into slices that ship and learn.
+- [Smoke Test Launcher](skills/lean-startup/smoke-test-launcher/SKILL.md) — Test demand before building with thresholds signed before launch.
 - [Vanity Metric Audit](skills/lean-startup/vanity-metric-audit/SKILL.md) — Separate decision-grade metrics from numbers that only flatter.
 
 ### Product thinking

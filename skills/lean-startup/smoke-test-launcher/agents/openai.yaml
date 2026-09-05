@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smoke Test Launcher"
+  short_description: "Test demand before building with thresholds signed before launch"
+  default_prompt: "Use $smoke-test-launcher to design a smoke test for my idea with a signed pass/fail threshold."

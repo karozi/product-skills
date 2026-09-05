@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engine of Growth"
+  short_description: "Diagnose sticky, viral, or paid and audit the one governing metric"
+  default_prompt: "Use $engine-of-growth to diagnose my growth engine and audit its governing metric."

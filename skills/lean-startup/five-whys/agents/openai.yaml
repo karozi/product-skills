@@ -1,0 +1,4 @@
+interface:
+  display_name: "Five Whys"
+  short_description: "Find the system failure behind any incident with proportional fixes at every level"
+  default_prompt: "Use $five-whys to run root-cause analysis on this incident and write the proportional fix plan."

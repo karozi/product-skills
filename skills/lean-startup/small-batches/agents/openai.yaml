@@ -1,0 +1,4 @@
+interface:
+  display_name: "Small Batches"
+  short_description: "Cut batch pathology into slices that ship and learn"
+  default_prompt: "Use $small-batches to audit my roadmap for batch pathology and re-slice it."

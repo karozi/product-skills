@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pirate Metrics AARRR"
+  short_description: "Map the funnel, hunt the leakiest bucket, run one experiment"
+  default_prompt: "Use $pirate-metrics-aarr to map my product onto AARRR and find the leakiest bucket."

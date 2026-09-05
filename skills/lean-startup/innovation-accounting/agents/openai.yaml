@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation Accounting"
+  short_description: "Make early-stage progress measurable with baselines, tuning, and pivot-or-persevere decisions"
+  default_prompt: "Use $innovation-accounting to set up baseline metrics and learning milestones for my unproven product."

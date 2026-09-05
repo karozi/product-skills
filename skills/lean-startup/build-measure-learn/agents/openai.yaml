@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Measure Learn"
+  short_description: "Plan loops that start with the hypothesis, not the build"
+  default_prompt: "Use $build-measure-learn to turn this initiative into a loop card that starts with learning."
