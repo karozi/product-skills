@@ -11,31 +11,31 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 ### Documentation
 
-- [Auto Gist Publisher](skills/documentation/auto-gist-publisher/SKILL.md) — Publish a public GitHub gist automatically every time a new skill is added to karozi/awesome-product-management-skills.
-- [Skill Improver](skills/documentation/skill-improver/SKILL.md) — Validate every skill on push and optimize descriptions from trigger evals.
-- [Sync Skills README](skills/documentation/sync-skills-readme/SKILL.md) — Keep a skills catalog accurate and current.
+- [Auto Gist Publisher](skills/documentation/auto-gist-publisher/SKILL.md) — Publish a public GitHub gist automatically every time a new skill is added to karozi/awesome-product-management-skills. [gist ↗](https://gist.github.com/karozi/7e5707805021c64c2b871337f01c3871)
+- [Skill Improver](skills/documentation/skill-improver/SKILL.md) — Validate every skill on push and optimize descriptions from trigger evals. [gist ↗](https://gist.github.com/karozi/58fc8ff22be93f17da17f196f115906b)
+- [Sync Skills README](skills/documentation/sync-skills-readme/SKILL.md) — Keep a skills catalog accurate and current. [gist ↗](https://gist.github.com/karozi/3d002161d3be0d696821058975761352)
 
 ### Lean startup
 
-- [Build Measure Learn](skills/lean-startup/build-measure-learn/SKILL.md) — Plan loops that start with the hypothesis, not the build.
-- [Engine of Growth](skills/lean-startup/engine-of-growth/SKILL.md) — Diagnose sticky, viral, or paid and audit the one governing metric.
-- [Five Whys](skills/lean-startup/five-whys/SKILL.md) — Find the system failure behind any incident with proportional fixes at every level.
-- [Innovation Accounting](skills/lean-startup/innovation-accounting/SKILL.md) — Make early-stage progress measurable with baselines, tuning, and pivot-or-persevere decisions.
-- [MVP Type Selector](skills/lean-startup/mvp-type-selector/SKILL.md) — Pick the cheapest MVP that actually tests your riskiest assumption.
-- [Pirate Metrics AARRR](skills/lean-startup/pirate-metrics-aarr/SKILL.md) — Map the funnel, hunt the leakiest bucket, run one experiment.
-- [Pivot Catalog](skills/lean-startup/pivot-catalog/SKILL.md) — Name the pivot with Ries's ten-type catalog and draft the new hypothesis.
-- [Pivot or Persevere](skills/lean-startup/pivot-or-persevere/SKILL.md) — Force an evidence-backed verdict with a threshold, not another flake.
-- [Small Batches](skills/lean-startup/small-batches/SKILL.md) — Cut batch pathology into slices that ship and learn.
-- [Smoke Test Launcher](skills/lean-startup/smoke-test-launcher/SKILL.md) — Test demand before building with thresholds signed before launch.
-- [Vanity Metric Audit](skills/lean-startup/vanity-metric-audit/SKILL.md) — Separate decision-grade metrics from numbers that only flatter.
+- [Build Measure Learn](skills/lean-startup/build-measure-learn/SKILL.md) — Plan loops that start with the hypothesis, not the build. [gist ↗](https://gist.github.com/karozi/c1980842ac2449cce4d8ab745ee063d2)
+- [Engine of Growth](skills/lean-startup/engine-of-growth/SKILL.md) — Diagnose sticky, viral, or paid and audit the one governing metric. [gist ↗](https://gist.github.com/karozi/9d6091e43c25a60ed47e571ab2a82376)
+- [Five Whys](skills/lean-startup/five-whys/SKILL.md) — Find the system failure behind any incident with proportional fixes at every level. [gist ↗](https://gist.github.com/karozi/42c0138ec561aedcacf646caaccbfe2b)
+- [Innovation Accounting](skills/lean-startup/innovation-accounting/SKILL.md) — Make early-stage progress measurable with baselines, tuning, and pivot-or-persevere decisions. [gist ↗](https://gist.github.com/karozi/36094ffe16dacc4ea0b7495e542e72b4)
+- [MVP Type Selector](skills/lean-startup/mvp-type-selector/SKILL.md) — Pick the cheapest MVP that actually tests your riskiest assumption. [gist ↗](https://gist.github.com/karozi/0660f3302f5902a49c89b4e3e9fc08ab)
+- [Pirate Metrics AARRR](skills/lean-startup/pirate-metrics-aarr/SKILL.md) — Map the funnel, hunt the leakiest bucket, run one experiment. [gist ↗](https://gist.github.com/karozi/0ccd1348aa10052193f60a3c8a1d10eb)
+- [Pivot Catalog](skills/lean-startup/pivot-catalog/SKILL.md) — Name the pivot with Ries's ten-type catalog and draft the new hypothesis. [gist ↗](https://gist.github.com/karozi/96e215d698cf7a08e0398c28a0e8d86b)
+- [Pivot or Persevere](skills/lean-startup/pivot-or-persevere/SKILL.md) — Force an evidence-backed verdict with a threshold, not another flake. [gist ↗](https://gist.github.com/karozi/a277c2aec62d2b8d6d8e3fa810f61c68)
+- [Small Batches](skills/lean-startup/small-batches/SKILL.md) — Cut batch pathology into slices that ship and learn. [gist ↗](https://gist.github.com/karozi/b7057abc477d8096d5b0fe612a510f99)
+- [Smoke Test Launcher](skills/lean-startup/smoke-test-launcher/SKILL.md) — Test demand before building with thresholds signed before launch. [gist ↗](https://gist.github.com/karozi/dcb28d94e009c380b7c092a62d36a4a1)
+- [Vanity Metric Audit](skills/lean-startup/vanity-metric-audit/SKILL.md) — Separate decision-grade metrics from numbers that only flatter. [gist ↗](https://gist.github.com/karozi/7eeb97c8900c5ecfe462e43005ce1b9a)
 
 ### Product thinking
 
-- [Anti-Mom-Test](skills/product-thinking/anti-mom-test/SKILL.md) — Make discovery interviews extract facts, not politeness.
-- [Ask Before Building](skills/product-thinking/ask-before-building/SKILL.md) — Turn open decisions into an executable build brief.
+- [Anti-Mom-Test](skills/product-thinking/anti-mom-test/SKILL.md) — Make discovery interviews extract facts, not politeness. [gist ↗](https://gist.github.com/karozi/82a4713e5da3d4fc71ed58b93a4bd4d1)
+- [Ask Before Building](skills/product-thinking/ask-before-building/SKILL.md) — Turn open decisions into an executable build brief. [gist ↗](https://gist.github.com/karozi/4178eb075413d25cd875e6ffd910426f)
 
 ### Research
 
-- [Bilingual Reasoning Research](skills/research/bilingual-reasoning-research/SKILL.md) — Dual-language (EN + ZH) claim-ledger research that surfaces divergences and unwritten gaps.
+- [Bilingual Reasoning Research](skills/research/bilingual-reasoning-research/SKILL.md) — Dual-language (EN + ZH) claim-ledger research that surfaces divergences and unwritten gaps. [gist ↗](https://gist.github.com/karozi/ed057af9f042181db8d0678f7864e007)
 
 <!-- END GENERATED SKILLS INDEX -->

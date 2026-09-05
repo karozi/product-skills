@@ -112,6 +112,27 @@ class ValidateSkillsTests(unittest.TestCase):
         errors = self.payload(completed)["results"][0]["errors"]
         self.assertTrue(any("missing file" in error for error in errors))
 
+    def test_nested_metadata_passes(self):
+        write_skill(self.root, skill_md=VALID_SKILL_MD.replace(
+            "---\n",
+            "---\nmetadata:\n  author: demo\n  version: '1.0'\n",
+            1,
+        ))
+        completed = run_validator(self.root)
+        self.assertEqual(completed.returncode, 0, completed.stdout)
+        self.assertEqual(self.payload(completed)["failed"], 0)
+
+    def test_nested_non_metadata_key_fails(self):
+        write_skill(self.root, skill_md=VALID_SKILL_MD.replace(
+            "---\n",
+            "---\ncompatibility:\n  requires: nothing\n",
+            1,
+        ))
+        completed = run_validator(self.root)
+        self.assertEqual(completed.returncode, 1)
+        errors = self.payload(completed)["results"][0]["errors"]
+        self.assertTrue(any("metadata" in error for error in errors))
+
     def test_wrong_depth_fails(self):
         deep = self.root / "skills" / "a" / "b" / "c"
         deep.mkdir(parents=True)

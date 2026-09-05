@@ -1,4 +1,141 @@
 {
-  "schema": 1,
-  "published": {}
+  "published": {
+    "documentation/auto-gist-publisher": {
+      "gist_id": "7e5707805021c64c2b871337f01c3871",
+      "gist_url": "https://gist.github.com/karozi/7e5707805021c64c2b871337f01c3871",
+      "published_at": "2026-09-05T00:40:50+00:00",
+      "rank_at_publish": 1,
+      "sha256": "f5d2b9cad0ad07cf665234ce0f15db76a6072df44555a11ae42aa86bf693cca4",
+      "total_at_publish": 17
+    },
+    "documentation/skill-improver": {
+      "gist_id": "58fc8ff22be93f17da17f196f115906b",
+      "gist_url": "https://gist.github.com/karozi/58fc8ff22be93f17da17f196f115906b",
+      "published_at": "2026-09-05T00:40:51+00:00",
+      "rank_at_publish": 2,
+      "sha256": "a41651d2d2dd19cb7f226dcb10792a7a781fecf7b4e016b762df19111df4280d",
+      "total_at_publish": 17
+    },
+    "documentation/sync-skills-readme": {
+      "gist_id": "3d002161d3be0d696821058975761352",
+      "gist_url": "https://gist.github.com/karozi/3d002161d3be0d696821058975761352",
+      "published_at": "2026-09-05T00:40:52+00:00",
+      "rank_at_publish": 3,
+      "sha256": "fc4d86689dbbfae04f848e2f892363a51e8aeec846901b4b4f5f7ed290df5968",
+      "total_at_publish": 17
+    },
+    "lean-startup/build-measure-learn": {
+      "gist_id": "c1980842ac2449cce4d8ab745ee063d2",
+      "gist_url": "https://gist.github.com/karozi/c1980842ac2449cce4d8ab745ee063d2",
+      "published_at": "2026-09-05T00:40:53+00:00",
+      "rank_at_publish": 4,
+      "sha256": "2ed7b449b31ff60e82e00c478e4947cc8fac235bea7567cea463cc1e3efcb245",
+      "total_at_publish": 17
+    },
+    "lean-startup/engine-of-growth": {
+      "gist_id": "9d6091e43c25a60ed47e571ab2a82376",
+      "gist_url": "https://gist.github.com/karozi/9d6091e43c25a60ed47e571ab2a82376",
+      "published_at": "2026-09-05T00:40:54+00:00",
+      "rank_at_publish": 5,
+      "sha256": "b312b333f1734bfaff6e4eab679f51a8fe043e0a8e20fe0fef06b0dc769c271d",
+      "total_at_publish": 17
+    },
+    "lean-startup/five-whys": {
+      "gist_id": "42c0138ec561aedcacf646caaccbfe2b",
+      "gist_url": "https://gist.github.com/karozi/42c0138ec561aedcacf646caaccbfe2b",
+      "published_at": "2026-09-05T00:40:55+00:00",
+      "rank_at_publish": 6,
+      "sha256": "8b619a705ba26c45fb37f9f3bf09c2b3d7a28f3ec7bd5aab318864c0bab3cd3d",
+      "total_at_publish": 17
+    },
+    "lean-startup/innovation-accounting": {
+      "gist_id": "36094ffe16dacc4ea0b7495e542e72b4",
+      "gist_url": "https://gist.github.com/karozi/36094ffe16dacc4ea0b7495e542e72b4",
+      "published_at": "2026-09-05T00:40:56+00:00",
+      "rank_at_publish": 7,
+      "sha256": "bf4eaca40db351d6aa0d9ea38c28fbf02a3eebf2bf7ed201108bfeed71b7a150",
+      "total_at_publish": 17
+    },
+    "lean-startup/mvp-type-selector": {
+      "gist_id": "0660f3302f5902a49c89b4e3e9fc08ab",
+      "gist_url": "https://gist.github.com/karozi/0660f3302f5902a49c89b4e3e9fc08ab",
+      "published_at": "2026-09-05T00:40:57+00:00",
+      "rank_at_publish": 8,
+      "sha256": "31854067394b348d6961124ba9c97110ff9a3f333a33a8458ee780dec59a59ae",
+      "total_at_publish": 17
+    },
+    "lean-startup/pirate-metrics-aarr": {
+      "gist_id": "0ccd1348aa10052193f60a3c8a1d10eb",
+      "gist_url": "https://gist.github.com/karozi/0ccd1348aa10052193f60a3c8a1d10eb",
+      "published_at": "2026-09-05T00:40:57+00:00",
+      "rank_at_publish": 9,
+      "sha256": "73ab4d504390725a871f220b324ca849d293f5a2cc7d1069ec5e40b88b35c276",
+      "total_at_publish": 17
+    },
+    "lean-startup/pivot-catalog": {
+      "gist_id": "96e215d698cf7a08e0398c28a0e8d86b",
+      "gist_url": "https://gist.github.com/karozi/96e215d698cf7a08e0398c28a0e8d86b",
+      "published_at": "2026-09-05T00:40:58+00:00",
+      "rank_at_publish": 10,
+      "sha256": "e0dd7290dd9f494da753e895d329c34fedb6accf1da7d5794d417be2fea5a434",
+      "total_at_publish": 17
+    },
+    "lean-startup/pivot-or-persevere": {
+      "gist_id": "a277c2aec62d2b8d6d8e3fa810f61c68",
+      "gist_url": "https://gist.github.com/karozi/a277c2aec62d2b8d6d8e3fa810f61c68",
+      "published_at": "2026-09-05T00:41:00+00:00",
+      "rank_at_publish": 11,
+      "sha256": "faf73f69d159f1f9a845f45dc6c28124d7aa5e5790ae83cfa0a6d9dcf03202c3",
+      "total_at_publish": 17
+    },
+    "lean-startup/small-batches": {
+      "gist_id": "b7057abc477d8096d5b0fe612a510f99",
+      "gist_url": "https://gist.github.com/karozi/b7057abc477d8096d5b0fe612a510f99",
+      "published_at": "2026-09-05T00:41:01+00:00",
+      "rank_at_publish": 12,
+      "sha256": "683ea6d5a7722d12952394c97b742896e0c4c647570180b1fe3081593914bdf7",
+      "total_at_publish": 17
+    },
+    "lean-startup/smoke-test-launcher": {
+      "gist_id": "dcb28d94e009c380b7c092a62d36a4a1",
+      "gist_url": "https://gist.github.com/karozi/dcb28d94e009c380b7c092a62d36a4a1",
+      "published_at": "2026-09-05T00:41:02+00:00",
+      "rank_at_publish": 13,
+      "sha256": "0b837ad84f1df85323a4b472ec2ad4f7a795aef9fb0a0cd7f8688c4871eeeb6a",
+      "total_at_publish": 17
+    },
+    "lean-startup/vanity-metric-audit": {
+      "gist_id": "7eeb97c8900c5ecfe462e43005ce1b9a",
+      "gist_url": "https://gist.github.com/karozi/7eeb97c8900c5ecfe462e43005ce1b9a",
+      "published_at": "2026-09-05T00:41:03+00:00",
+      "rank_at_publish": 14,
+      "sha256": "eaf82a11b0b97d9abc70eb1e16eed58dee3a719fb8491b5eb407ae02a7bc31eb",
+      "total_at_publish": 17
+    },
+    "product-thinking/anti-mom-test": {
+      "gist_id": "82a4713e5da3d4fc71ed58b93a4bd4d1",
+      "gist_url": "https://gist.github.com/karozi/82a4713e5da3d4fc71ed58b93a4bd4d1",
+      "published_at": "2026-09-05T00:41:04+00:00",
+      "rank_at_publish": 15,
+      "sha256": "d165b64f5260bb9274a8c4b4b9a0cae3b1c89ef5babb386a1cd6e22b1e09f609",
+      "total_at_publish": 17
+    },
+    "product-thinking/ask-before-building": {
+      "gist_id": "4178eb075413d25cd875e6ffd910426f",
+      "gist_url": "https://gist.github.com/karozi/4178eb075413d25cd875e6ffd910426f",
+      "published_at": "2026-09-05T00:41:05+00:00",
+      "rank_at_publish": 16,
+      "sha256": "0065b2c742cf6d08e4404d9d6a2c6234dc7d46dca8bb0fdc519ef7703e47db6c",
+      "total_at_publish": 17
+    },
+    "research/bilingual-reasoning-research": {
+      "gist_id": "ed057af9f042181db8d0678f7864e007",
+      "gist_url": "https://gist.github.com/karozi/ed057af9f042181db8d0678f7864e007",
+      "published_at": "2026-09-05T00:41:06+00:00",
+      "rank_at_publish": 17,
+      "sha256": "63e357549b81a3dbd6bda7ca74b452d94b1a3457345b275dbdd029bf36420e14",
+      "total_at_publish": 17
+    }
+  },
+  "schema": 1
 }

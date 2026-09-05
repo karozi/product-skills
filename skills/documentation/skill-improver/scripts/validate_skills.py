@@ -36,18 +36,40 @@ def parse_frontmatter(text: str, source: Path) -> tuple[dict[str, str], str]:
         raise ValueError(f"{source}: unterminated or invalid frontmatter")
 
     fields: dict[str, str] = {}
-    for line in match.group(1).splitlines():
+    lines = match.group(1).splitlines()
+    index = 0
+    while index < len(lines):
+        line = lines[index]
         stripped = line.strip()
         if not stripped or stripped.startswith("#"):
+            index += 1
             continue
         if line[:1].isspace():
-            raise ValueError(f"{source}: nested frontmatter values are not supported; keep scalars only")
+            raise ValueError(
+                f"{source}: nested frontmatter values are only supported under 'metadata'"
+            )
         if ":" not in line:
-            raise ValueError(f"{source}: unparseable frontmatter line: {line.strip()!r}")
+            raise ValueError(f"{source}: unparseable frontmatter line: {stripped!r}")
         key, raw = line.split(":", 1)
         key = key.strip()
         raw = raw.strip()
         if not raw:
+            # An empty scalar may open a nested block (indented sub-keys).
+            # Only 'metadata' may nest, per the skill spec.
+            nested: list[str] = []
+            cursor = index + 1
+            while cursor < len(lines) and (not lines[cursor].strip() or lines[cursor][:1].isspace()):
+                if lines[cursor].strip():
+                    nested.append(lines[cursor].strip())
+                cursor += 1
+            if nested:
+                if key != "metadata":
+                    raise ValueError(
+                        f"{source}: only 'metadata' may be a nested mapping; {key!r} must be a scalar"
+                    )
+                fields[key] = "\n".join(nested)
+                index = cursor
+                continue
             raise ValueError(f"{source}: empty value for frontmatter key {key!r}")
         if raw[0] == '"':
             if len(raw) < 2 or raw[-1] != '"':
@@ -64,6 +86,7 @@ def parse_frontmatter(text: str, source: Path) -> tuple[dict[str, str], str]:
             fields[key] = raw
         if not isinstance(fields[key], str):
             raise ValueError(f"{source}: {key!r} must be a string")
+        index += 1
     if not fields:
         raise ValueError(f"{source}: frontmatter is empty")
     return fields, match.group(2)
