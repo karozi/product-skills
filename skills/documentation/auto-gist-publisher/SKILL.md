@@ -24,11 +24,12 @@ Skill #<N> of <TOTAL> in awesome-product-management-skills
 
 Read the full skill: https://github.com/karozi/awesome-product-management-skills/tree/main/skills/<category>/<slug>
 
-See more AI PM resources at https://karozieminski.substack.com/
+See more AI PM resources at https://karozieminski.substack.com/?utm_source=github-gist&utm_medium=referral&utm_campaign=amps-skills&utm_content=<slug>
 ```
 
 - `<N>` is the alphabetical rank of the new skill among all skills in the repo after the push.
 - `<TOTAL>` is the total skill count in the repo after the push.
+- The Substack CTA carries per-skill UTM attribution (`utm_source=github-gist`, `utm_medium=referral`, `utm_campaign=amps-skills`, `utm_content=<slug>`) so gist-driven traffic is measurable per skill in GA4.
 - Filename in the gist is `<slug>.md`; gist description is `Skill #<N>: <Display Name> — awesome-product-management-skills`.
 
 ## When it runs
@@ -42,7 +43,7 @@ Idempotent by design. `state/published.json` (committed to the repo) maps `categ
 1. Enumerate every `skills/*/*/SKILL.md`.
 2. Any skill not in `published.json` is new → publish a gist, then add its entry.
 3. Skills already in `published.json` are skipped (edits do not re-publish; this is a launch announcement, not a changelog).
-4. Commit the updated `published.json` back to `main`.
+4. Commit the updated `published.json` and the re-synced README catalog (the sync-skills-readme script renders a `gist ↗` badge per published skill) back to `main` in one commit.
 
 ## Files
 

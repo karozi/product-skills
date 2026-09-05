@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import sys
 import tempfile
 import unittest
@@ -162,6 +163,94 @@ class SyncSkillsReadmeTests(unittest.TestCase):
 
         self.assertTrue(updated.startswith(b"\xef\xbb\xbf"))
         self.assertNotIn(b"\n", updated.replace(b"\r\n", b""))
+
+
+class GistBadgeTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.temporary_directory = tempfile.TemporaryDirectory()
+        self.repo = Path(self.temporary_directory.name)
+        (self.repo / "README.md").write_text(
+            "# Example\n\n## Skills\n\nOld catalog.\n",
+            encoding="utf-8",
+        )
+
+    def tearDown(self) -> None:
+        self.temporary_directory.cleanup()
+
+    def _add_skill(self, category: str, name: str) -> None:
+        skill_directory = self.repo / "skills" / category / name
+        skill_directory.mkdir(parents=True)
+        (skill_directory / "SKILL.md").write_text(
+            f"---\nname: {name}\ndescription: Fallback description for {name}.\n---\n\n"
+            f"# {name.replace('-', ' ').title()}\n",
+            encoding="utf-8",
+        )
+
+    def _write_state(self, published: dict) -> None:
+        state_path = self.repo / catalog.GIST_STATE_REL_PATH
+        state_path.parent.mkdir(parents=True)
+        state_path.write_text(
+            '{"schema": 1, "published": ' + json.dumps(published) + "}",
+            encoding="utf-8",
+        )
+
+    def test_badge_rendered_for_published_skill(self) -> None:
+        self._add_skill("lean-startup", "mvp-type-selector")
+        self._write_state(
+            {
+                "lean-startup/mvp-type-selector": {
+                    "gist_id": "abc123",
+                    "gist_url": "https://gist.github.com/karozi/abc123",
+                }
+            }
+        )
+
+        rendered = catalog.render_catalog(catalog.collect_skills(self.repo))
+
+        self.assertIn("[gist ↗](https://gist.github.com/karozi/abc123)", rendered)
+
+    def test_no_badge_when_state_missing(self) -> None:
+        self._add_skill("lean-startup", "mvp-type-selector")
+
+        rendered = catalog.render_catalog(catalog.collect_skills(self.repo))
+
+        self.assertNotIn("gist", rendered)
+
+    def test_no_badge_for_unpublished_skill(self) -> None:
+        self._add_skill("lean-startup", "mvp-type-selector")
+        self._add_skill("lean-startup", "other-skill")
+        self._write_state(
+            {
+                "lean-startup/other-skill": {
+                    "gist_url": "https://gist.github.com/karozi/xyz",
+                }
+            }
+        )
+
+        rendered = catalog.render_catalog(catalog.collect_skills(self.repo))
+
+        self.assertIn("[gist ↗](https://gist.github.com/karozi/xyz)", rendered)
+        mvp_line = next(line for line in rendered.splitlines() if "mvp" in line.lower())
+        self.assertNotIn("gist", mvp_line)
+
+    def test_malformed_state_raises(self) -> None:
+        self._add_skill("lean-startup", "mvp-type-selector")
+        state_path = self.repo / catalog.GIST_STATE_REL_PATH
+        state_path.parent.mkdir(parents=True)
+        state_path.write_text("{not json", encoding="utf-8")
+
+        with self.assertRaises(catalog.CatalogError):
+            catalog.collect_skills(self.repo)
+
+    def test_non_gist_urls_are_ignored(self) -> None:
+        self._add_skill("lean-startup", "mvp-type-selector")
+        self._write_state(
+            {"lean-startup/mvp-type-selector": {"gist_url": "https://example.com/nope"}}
+        )
+
+        rendered = catalog.render_catalog(catalog.collect_skills(self.repo))
+
+        self.assertNotIn("gist ↗", rendered)
 
 
 if __name__ == "__main__":

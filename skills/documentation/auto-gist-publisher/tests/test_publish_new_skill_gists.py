@@ -68,6 +68,16 @@ class GistBodyTests(unittest.TestCase):
         self.assertIn("https://github.com/karozi/awesome-product-management-skills/tree/main/skills/lean-startup/mvp-type-selector", body)
         self.assertIn("https://karozieminski.substack.com/", body)
 
+    def test_cta_carries_per_skill_utm(self) -> None:
+        cta = pub.substack_cta("mvp-type-selector")
+        self.assertIn("utm_source=github-gist", cta)
+        self.assertIn("utm_medium=referral", cta)
+        self.assertIn("utm_campaign=amps-skills", cta)
+        self.assertIn("utm_content=mvp-type-selector", cta)
+        body = pub.build_gist_body(self._skill(), rank=3, total=9)
+        self.assertIn(pub.substack_cta("mvp-type-selector"), body)
+        self.assertNotIn("??", body)
+
     def test_display_name_uppercases_specials(self) -> None:
         self.assertEqual(pub._display_name("mvp-type-selector"), "MVP Type Selector")
         self.assertEqual(pub._display_name("anti-mom-test"), "Anti Mom Test")

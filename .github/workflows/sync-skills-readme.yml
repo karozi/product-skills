@@ -7,6 +7,7 @@ on:
     paths:
       - "skills/**/SKILL.md"
       - "skills/**/agents/openai.yaml"
+      - "skills/documentation/auto-gist-publisher/state/published.json"
       - "skills/documentation/sync-skills-readme/scripts/**"
       - "skills/documentation/sync-skills-readme/tests/**"
       - ".github/workflows/sync-skills-readme.yml"
@@ -41,6 +42,8 @@ jobs:
             echo "README.md is already current."
             exit 0
           fi
+          # Pick up any concurrent bot commits (e.g. gist state) before writing.
+          git pull --rebase --autostash origin main
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md

@@ -44,7 +44,7 @@ jobs:
           fi
           python3 skills/documentation/auto-gist-publisher/scripts/publish_new_skill_gists.py --repo-root . --write
 
-      - name: Commit updated published.json when changed
+      - name: Sync README catalog and commit state
         shell: bash
         run: |
           STATE_PATH="skills/documentation/auto-gist-publisher/state/published.json"
@@ -52,8 +52,12 @@ jobs:
             echo "No new gists published; state unchanged."
             exit 0
           fi
+          # Pick up any concurrent bot commits before writing.
+          git pull --rebase --autostash origin main
+          # Re-render the README catalog so new gist badges appear in the same commit.
+          python3 skills/documentation/sync-skills-readme/scripts/sync_skills_readme.py --repo-root . --write
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$STATE_PATH"
-          git commit -m "chore: record newly published skill gists"
+          git add "$STATE_PATH" README.md
+          git commit -m "chore: publish skill gists and sync catalog"
           git push

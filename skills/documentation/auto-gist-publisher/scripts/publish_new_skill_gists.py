@@ -27,8 +27,17 @@ from aio_description import rewrite_for_aio  # noqa: E402
 
 REPO_SLUG = "karozi/awesome-product-management-skills"
 REPO_TREE_BASE = f"https://github.com/{REPO_SLUG}/tree/main"
-SUBSTACK_CTA = "See more AI PM resources at https://karozieminski.substack.com/"
+SUBSTACK_URL = "https://karozieminski.substack.com/"
 STATE_REL_PATH = "skills/documentation/auto-gist-publisher/state/published.json"
+
+
+def substack_cta(slug: str) -> str:
+    """CTA line with per-skill UTM attribution for GA4."""
+    return (
+        f"See more AI PM resources at {SUBSTACK_URL}"
+        f"?utm_source=github-gist&utm_medium=referral"
+        f"&utm_campaign=amps-skills&utm_content={slug}"
+    )
 
 
 class PublisherError(RuntimeError):
@@ -166,7 +175,7 @@ def build_gist_body(skill: Skill, rank: int, total: int) -> str:
         f"{aio}\n\n"
         f"Read the full skill: {skill.repo_url}\n\n"
         f"---\n\n"
-        f"{SUBSTACK_CTA}\n"
+        f"{substack_cta(skill.slug)}\n"
     )
 
 
