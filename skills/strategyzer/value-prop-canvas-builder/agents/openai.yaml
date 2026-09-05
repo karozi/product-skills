@@ -1,0 +1,4 @@
+interface:
+  display_name: "Value Proposition Canvas Builder"
+  short_description: "Evidence-tagged VPC for any product, with fit verdicts"
+  default_prompt: "Use $value-prop-canvas-builder to build an evidence-backed value proposition canvas for this product."

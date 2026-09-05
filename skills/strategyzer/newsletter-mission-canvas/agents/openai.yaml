@@ -1,0 +1,4 @@
+interface:
+  display_name: "Newsletter Mission Canvas"
+  short_description: "Mission Model Canvas for solo creators, with gap analysis and 90-day actions"
+  default_prompt: "Use $newsletter-mission-canvas to audit my newsletter business model and return 90-day actions."

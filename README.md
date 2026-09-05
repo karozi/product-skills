@@ -38,4 +38,11 @@ Built by Karo Zieminski — subscribe at [karozieminski.substack.com](https://ka
 
 - [Bilingual Reasoning Research](skills/research/bilingual-reasoning-research/SKILL.md) — Dual-language (EN + ZH) claim-ledger research that surfaces divergences and unwritten gaps. [gist ↗](https://gist.github.com/karozi/ed057af9f042181db8d0678f7864e007)
 
+### Strategyzer
+
+- [Business Model Canvas Audit](skills/strategyzer/business-model-canvas-audit/SKILL.md) — Reconstruct a company's business model from public evidence, cell by cell.
+- [Experiment Card Generator](skills/strategyzer/experiment-card-generator/SKILL.md) — Turn risky claims into Strategyzer Test Cards, cheapest test first.
+- [Newsletter Mission Canvas](skills/strategyzer/newsletter-mission-canvas/SKILL.md) — Mission Model Canvas for solo creators, with gap analysis and 90-day actions.
+- [Value Proposition Canvas Builder](skills/strategyzer/value-prop-canvas-builder/SKILL.md) — Evidence-tagged VPC for any product, with fit verdicts.
+
 <!-- END GENERATED SKILLS INDEX -->

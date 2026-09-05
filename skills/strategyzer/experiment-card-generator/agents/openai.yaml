@@ -1,0 +1,4 @@
+interface:
+  display_name: "Experiment Card Generator"
+  short_description: "Turn risky claims into Strategyzer Test Cards, cheapest test first"
+  default_prompt: "Use $experiment-card-generator to turn these claims into prioritized test cards."

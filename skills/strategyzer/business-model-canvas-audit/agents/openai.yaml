@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Model Canvas Audit"
+  short_description: "Reconstruct a company's business model from public evidence, cell by cell"
+  default_prompt: "Use $business-model-canvas-audit to reconstruct this company's business model canvas from public evidence."

@@ -1,0 +1,51 @@
+{
+  "schema": "productwithattitude.for-machines/v1",
+  "entry_type": "value_proposition_canvas",
+  "title": "Value Proposition Canvas: {{PRODUCT}}",
+  "customer_segment": "{{SEGMENT}}",
+  "subject": {
+    "name": "{{PRODUCT}}",
+    "url": "{{official site}}",
+    "kind": "ai_tool_or_product"
+  },
+  "canvas": {
+    "customer_profile": {
+      "jobs": [
+        { "text": "...", "tag": "SOURCED", "source": "https://..." },
+        { "text": "...", "tag": "INFERRED", "sources": ["https://...", "https://..."] },
+        { "text": "...", "tag": "ORIGINAL" }
+      ],
+      "pains": [
+        { "text": "...", "tag": "SOURCED", "source": "https://..." }
+      ],
+      "gains": [
+        { "text": "...", "tag": "SOURCED", "source": "https://..." }
+      ]
+    },
+    "value_map": {
+      "products_and_services": [
+        { "text": "...", "tag": "SOURCED", "source": "https://..." }
+      ],
+      "pain_relievers": [
+        { "text": "...", "addresses_pain": "named pain from customer profile", "tag": "SOURCED", "source": "https://..." }
+      ],
+      "gain_creators": [
+        { "text": "...", "addresses_gain": "named gain from customer profile", "tag": "SOURCED", "source": "https://..." }
+      ]
+    }
+  },
+  "ai_era_scores": {
+    "model_dependency": { "score": "low|medium|high", "justification": "..." },
+    "credit_pricing": { "score": "low|medium|high", "justification": "..." },
+    "agent_readiness": { "score": "low|medium|high", "justification": "..." },
+    "vendor_lock_in": { "score": "low|medium|high", "justification": "..." }
+  },
+  "fit_assessment": {
+    "problem_solution_fit": { "verdict": "strong|emerging|unproven|absent", "argument": "..." },
+    "product_market_fit": { "verdict": "strong|emerging|unproven|absent", "argument": "..." },
+    "business_model_fit": { "verdict": "strong|emerging|unproven|absent", "argument": "..." }
+  },
+  "sources": ["https://..."],
+  "generated": "{{ISO date}}",
+  "next_step": "publish as a structured page on the user's site with Table JSON-LD, or paste into any CMS"
+}
